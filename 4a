@@ -1,0 +1,9 @@
+#query untuk menampilkan nama dan nama skillnya
+SELECT user_tb.name, skill_tb.name
+FROM user_tb
+INNER JOIN skill_tb on user_tb.id = skill_tb.id;
+
+#query insert
+INSERT INTO skill_tb(id,name,user_id) VALUES('2','swing','453');
+INSERT INTO user_tb(id,name,photo) VALUES('1','escanor',LOAD_FILE('/home/genom3/Pictures/celluloid-shot0001.jpg'));
+
